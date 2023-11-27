@@ -1,0 +1,10 @@
+.userNameCell {
+  display: flex;
+  gap: 8px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

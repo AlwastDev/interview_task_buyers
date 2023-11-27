@@ -1,0 +1,18 @@
+@import "constants/constans.scss";
+
+.topBuyers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  @include flexRow(center, flex-start);
+}
+
+.buyersList {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 0 24px 0;
+  border-bottom: toRem(1) solid $grey_pale;
+}

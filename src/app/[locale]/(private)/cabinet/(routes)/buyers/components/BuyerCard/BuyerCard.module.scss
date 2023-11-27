@@ -1,0 +1,66 @@
+@import "constants/constans.scss";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  padding: 16px 8px 16px 8px;
+  background-color: $grey;
+
+  height: 200px;
+}
+
+.card__avatarContainer {
+  position: relative;
+}
+
+.card__avatarContainer__avatar {
+  border-radius: 50%;
+}
+
+.card__avatarContainer__position {
+  @include flexRow(center, center);
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 2px solid $white;
+  font-weight: 400;
+  font-size: 16px;
+  color: $dark;
+
+  &.firstPosition {
+    background-color: $gold;
+
+    [data-theme="dark"] & {
+      color: $white;
+      border: 2px solid rgba(255, 255, 255, 0.24);
+    }
+  }
+
+  &.defaultPosition {
+    background-color: #F0EFF0;
+
+    [data-theme="dark"] & {
+      color: #FFF;
+      background-color: rgba(0, 0, 0, 1);
+      border: 2px solid rgba(255, 255, 255, 0.24);
+    }
+  }
+}
+
+.card__fullName {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $dark;
+}
+
+.card__purchaseContainer {
+    margin-top: 13px;
+    @include flexRow(center, center);
+}

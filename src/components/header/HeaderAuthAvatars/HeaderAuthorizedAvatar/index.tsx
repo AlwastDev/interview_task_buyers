@@ -7,18 +7,13 @@ import { useAuth } from 'utils/hooks/useAuth';
 import { ROUTES } from 'constants/routes';
 
 import { DropDown } from 'ui/components/DropDown';
-import { TransparentAchiveIcon } from 'components/icons/AchiveIcon';
-import { MessageIcon } from 'components/icons/MessageIcon';
-import { CartIcon } from 'components/icons/CartIcon';
 import { MoonIcon } from 'components/icons/MoonIcon';
-import { FlagIcon } from 'components/icons/FlagIcon';
-import { ExitIcon } from 'components/icons/ExitIcon';
 import { ThemeSwitcher } from 'components/common/ThemeSwitcher';
-import { ProfileIcon } from 'components/icons/ProfileIcon';
 import { UserAvatar } from 'components/common/UserAvatar';
 
 import s from '../../Header.module.scss';
 import { KeyIcon } from 'components/icons/KeyIcon';
+import { HumanIcon } from 'components/icons/HumanIcon';
 
 export const HeaderAuthorizedAvatar: FC = () => {
   const t = useTranslations('Header.Dropdowns');
@@ -30,14 +25,19 @@ export const HeaderAuthorizedAvatar: FC = () => {
   const onMouseEnter = () => setIsOpen(true);
   const onMouseLeave = () => setIsOpen(false);
 
-  const accountBox = {
+  const accountBoxes = {
     title: t('account'),
     list: [
       {
         title: 'security',
         icon: <KeyIcon />,
         href: ROUTES.PRIVATE.SECURITY,
-      }
+      },
+      {
+        title: 'Buyers',
+        icon: <HumanIcon />,
+        href: ROUTES.PRIVATE.BUYERS,
+      },
     ],
   };
 
@@ -62,7 +62,7 @@ export const HeaderAuthorizedAvatar: FC = () => {
         <div className={s.dropdown_box}>
           <span className={s.dropdown_title}>{t('account')}</span>
           <ul className={s.dropdown_list}>
-            {accountBox.list.map((item, index) => (
+            {accountBoxes.list.map((item, index) => (
               <li key={index}>
                 <Link href={item.href} className={s.dropdown_btn}>
                   {item.icon}

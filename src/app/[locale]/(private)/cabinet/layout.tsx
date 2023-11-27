@@ -23,8 +23,7 @@ interface PrivateLayoutProps {
 }
 
 export default async function PrivateLayout({ children }: PrivateLayoutProps) {
-
-  let currentConfig: ISidebarConfig = buyerConfig;
+  const currentConfig: ISidebarConfig = buyerConfig;
 
   return (
     <>
@@ -32,9 +31,7 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
       <main className={s.profile}>
         <Container>
           <div className={s.profile_wrapper}>
-            <ProfileSidebar
-              config={currentConfig}
-            />
+            <ProfileSidebar config={currentConfig} />
             {children}
           </div>
         </Container>

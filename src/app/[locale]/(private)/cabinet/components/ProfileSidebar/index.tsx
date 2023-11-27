@@ -9,7 +9,6 @@ import { locales } from 'constants/locales';
 
 import { EnumRoles } from 'types/enums';
 import { IUser } from 'types/userTypes';
-import { Button } from 'ui/components/Button';
 import { useAuth } from 'utils/hooks/useAuth';
 
 import { ExitIcon } from 'components/icons/ExitIcon';
@@ -64,7 +63,7 @@ export const ProfileSidebar: FC<ProfileSidebarProps> = ({ config, user }) => {
           </div>
           <div className={s.user_info}>
             <span className={s.user_name}>
-              {user?.userName ? user?.userName : 'Noname'}
+              {user?.userName ? user?.userName : 'Jane Cooper'}
             </span>
             {isSeller ? (
               <div className={s.user_confident}>
@@ -79,7 +78,9 @@ export const ProfileSidebar: FC<ProfileSidebarProps> = ({ config, user }) => {
                 />
               </div>
             ) : (
-              <span className={s.user_email}>{user?.email}</span>
+              <span className={s.user_email}>
+                {user?.email ? user?.email : 'jane@gmail.com'}
+              </span>
             )}
           </div>
         </div>

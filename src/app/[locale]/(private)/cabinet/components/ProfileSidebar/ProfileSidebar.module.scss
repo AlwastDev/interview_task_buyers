@@ -15,12 +15,15 @@
         @media (max-height: em(999)) {
             max-height: toRem(564);
         }
+
         @media (max-height: em(899)) {
             max-height: toRem(464);
         }
+
         @media (max-height: em(799)) {
             max-height: toRem(364);
         }
+
         @media (max-height: em(699)) {
             max-height: toRem(264);
         }

@@ -147,7 +147,9 @@ export const Table: FC<TableProps> = ({
                 >
                   {column.canSort ? (
                     <div className={s.table_filter}>
-                      {translateFn(column.render('Header'))}
+                      {typeof column.render('Header') === 'object'
+                        ? column.render('Header')
+                        : translateFn(column.render('Header'))}
                       {column.isSorted ? (
                         column.isSortedDesc ? (
                           <LongArrowTopIcon />

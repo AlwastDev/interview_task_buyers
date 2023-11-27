@@ -1,0 +1,23 @@
+@import "constants/constans.scss";
+
+.filters {
+  display: flex;
+  margin-top: 24px;
+  gap: 24px;
+}
+
+.filters__input {
+  margin: 0;
+  width: toRem(328);
+}
+
+.filters__button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  background-color: $blue_pale;
+  border-radius: 12px;
+}

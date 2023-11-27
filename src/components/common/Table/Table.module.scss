@@ -114,7 +114,7 @@
 .pagination {
     @include flexRow(center, space-between);
     column-gap: toRem(24);
-    padding: toRem(24);
+    padding: toRem(24) toRem(24) 0 toRem(24);
     border-top: toRem(1) solid $grey_pale;
 
     &_controls {

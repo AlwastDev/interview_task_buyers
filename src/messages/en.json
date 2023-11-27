@@ -585,12 +585,18 @@
       "level": "Lv",
       "confident_lvl": "Confident Lv:",
       "profile": "Profile",
+      "dashboard": "Dashboard",
       "messages": "Messages",
+      "sections": "Sections",
+      "financial": "Financial",
+      "sellers": "Sellers",
+      "report": "Report",
       "bought_roducts": "Bought Products",
       "achievement": "Achievement",
       "payment": "Payment",
       "notifications": "Notifications",
       "security": "Security",
+      "buyers": "Buyers",
       "logout": "Logout",
       "Seller": {
         "financial_balance": "Financial & Balance",
@@ -773,6 +779,33 @@
         "fa_enabled": "2FA Enabled",
         "fa_enabled_subtitle": "Your 2FA has been enabled successfully",
         "ok": "Ok"
+      }
+    },
+    "Buyers": {
+      "title": "Buyers",
+      "TopBuyers": {
+        "title": "Top Buyers",
+        "allTime": "All time",
+        "thisYear": "This year",
+        "thisMonth": "This month"
+      },
+      "Filters": {
+        "search": "Search",
+        "searchSeller": "Search Seller",
+        "signUpDate": "Signup Date",
+        "from": "From",
+        "to": "To"
+      },
+      "Table": {
+        "userName": "User Name",
+        "signupDate": "Signup Date",
+        "purchases": "Purchases"
+      },
+      "Modal": {
+        "title": "Ban buyer",
+        "text": "Are you sure to ban this buyer?",
+        "cancel": "Cancel",
+        "delete": "Ban"
       }
     },
     "FinancialBalance": {

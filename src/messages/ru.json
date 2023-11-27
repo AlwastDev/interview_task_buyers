@@ -571,12 +571,18 @@
       "level": "Рівень",
       "confident_lvl": "Рівень впевненості:",
       "profile": "Профіль",
+      "dashboard": "Iнформаційна панель",
       "messages": "Повідомлення",
+      "sections": "Розділи",
+      "financial": "Фінанси",
+      "sellers": "Продавці",
+      "report": "Звіт",
       "bought_roducts": "Придбані продукти",
       "achievement": "Досягнення",
       "payment": "Платіж",
       "notifications": "Сповіщення",
       "security": "Безпека",
+      "buyers": "Покупці",
       "logout": "Вийти",
       "Seller": {
         "financial_balance": "Фінансовий баланс",
@@ -584,7 +590,7 @@
         "top_sellers": "Топ-продавці",
         "new_offer": "Створити товар"
       }
-    },    
+    },
     "Profile": {
       "change_background": "Змінити тло",
       "level": "Рівень",
@@ -756,6 +762,33 @@
         "fa_enabled": "2FA Увімкнено",
         "fa_enabled_subtitle": "Ваша двофакторна автентикація успішно увімкнена",
         "ok": "Добре"
+      }
+    },
+    "Buyers": {
+      "title": "Покупці",
+      "TopBuyers": {
+        "title": "Найкращі покупці",
+        "allTime": "За весь час",
+        "thisYear": "Цього року",
+        "thisMonth": "Цього місяця"
+      },
+      "Filters": {
+        "search": "Пошук",
+        "searchSeller": "Пошук продавця",
+        "signUpDate": "Дата реєстрації",
+        "from": "Від",
+        "to": "До"
+      },
+      "Table": {
+        "userName": "Ім'я користувача",
+        "signupDate": "Дата реєстрації",
+        "purchases": "Закупівлі"
+      },
+      "Modal": {
+        "title": "Забанити покупця",
+        "text": "Ви впевнені, що хочете забанити цього покупця?",
+        "cancel": "Скасувати",
+        "delete": "Забанити"
       }
     },
     "FinancialBalance": {

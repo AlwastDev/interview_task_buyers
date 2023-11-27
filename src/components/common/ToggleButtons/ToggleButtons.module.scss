@@ -1,0 +1,43 @@
+@import "constants/constans.scss";
+
+.toggleButtons {
+  $width: toRem(320);
+  $padding: toRem(1);
+
+  width: $width;
+  padding: $padding;
+
+  [data-theme="dark"] & {
+    background-color: $grey_misty_36;
+    border-color: $grey_pale;
+  }
+
+  display: flex;
+  border-radius: 16px;
+  border: 1px solid $grey_pale;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.02);
+
+  button {
+    $width: toRem(105);
+
+    width: $width;
+    height: 40px;
+
+    font-weight: 600;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &.active {
+      background-color: $blue_pale;
+      color: $accent;
+
+      [data-theme="dark"] & {
+        background-color: $dark;
+      }
+    }
+  }
+}
+
+.selected-option {
+  margin-top: 20px;
+}

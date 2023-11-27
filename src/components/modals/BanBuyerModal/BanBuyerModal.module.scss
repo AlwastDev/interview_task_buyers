@@ -1,0 +1,12 @@
+@import "constants/constans.scss";
+
+.modal {
+  &_btns {
+    @include flexRow(center, flex-end);
+    column-gap: toRem(24);
+
+    & > button {
+      min-width: toRem(120);
+    }
+  }
+}

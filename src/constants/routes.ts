@@ -20,13 +20,20 @@ export const ROUTES = {
 
   PRIVATE: {
     PROFILE: '/cabinet/profile',
+    DASHBOARD: '/cabinet/dashboard',
     MESSAGES: '/cabinet/messages',
+    SECTIONS: '/cabinet/sections',
+    SELLERS: '/cabinet/sellers',
+    FINANCIAL: '/cabinet/financial',
     BOUGHT_PRODUCTS: '/cabinet/bought-products',
     ACHIEVEMENT: '/cabinet/achievement',
     PAYMENT: '/cabinet/payment',
     PAYMENT_DETAILS: '/cabinet/payment/details',
     NOTIFICATIONS: '/cabinet/notifications',
     SECURITY: '/cabinet/security',
+    REPORT: '/cabinet/report',
+    SETTINGS: '/cabinet/settings',
+    BUYERS: '/cabinet/buyers',
 
     SELLER: {
       FINANCIAL_BALANCE: '/cabinet/financial-balance',
@@ -44,6 +51,7 @@ export const ROUTES = {
 
   AUTH: {
     LOGIN: '/login',
+    LOGOUT: '/logout',
     REGISTRATION: '/registration',
 
     CONFIRM_EMAIL: '/confirm-email',

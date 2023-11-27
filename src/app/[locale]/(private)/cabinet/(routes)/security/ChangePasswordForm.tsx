@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 import { userShema } from 'utils/schemes/user-shema';
 
 import { Button } from 'ui/components/Button';
-import { FieldBox } from 'components/common/fieldBox';
+import { FieldBox } from 'components/common/FieldBox';
 
 import s from './Security.module.scss';
 
